@@ -6,16 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class Activity_sub_one extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sub_one);
     }
-    public void ChuyenManhinh(View v){
-        Intent iManhinhKhac = new Integer( MainActivity.this, SubActivity.class );
-        startActivity(iManhinhKhac);
+    public void QuayVe(View v){
+        Intent iManhinhChinh = new Integer( SubActivity.this,MainActivity.class );
+        startActivity(iManhinhChinh);
     }
-
 }

@@ -4,50 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="88dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="TRƯỜNG ĐẠI HỌC NHA TRANG"
-        android:textSize="24sp"
+        android:layout_width="567dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="30dp"
+        android:text="Màn hình trang chủ"
+        android:textAlignment="center"
+        android:textColor="#100505"
+        android:textSize="48sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="119dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="119dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/nha_trang_university_seal" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnlogin"
-        android:background="#2196F3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="153dp"
-        android:layout_marginLeft="153dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginEnd="165dp"
-        android:layout_marginRight="165dp"
-        android:text="Đăng nhập"
-        app:backgroundTint="#2196F3"
+        android:id="@+id/button2"
+        android:layout_width="245dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="357dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="357dp"
+        android:layout_marginBottom="1419dp"
+        android:onClick="ChuyenManHinh"
+        android:text="quayve"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
