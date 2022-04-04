@@ -23,15 +23,17 @@ public class LoginActivity extends AppCompatActivity {
         public void onClick(View v) {
             EditText tk = (EditText) findViewById(R.id.edtusername);
             EditText mk = (EditText) findViewById(R.id.edtpass);
+            EditText ml = (EditText) findViewById(R.id.edtemail);
             String user = "phu";
             String pass = "123";
+            String mail = "";
             String t = tk.getText().toString();
             String m = mk.getText().toString();
-
-            if ((t.equals(user)) && (m.equals(pass))){
+            String e = ml.getText().toString();
+            if ((t.equals(user)) && (m.equals(pass)) && (e.equals(mail)==false)){
                 Toast.makeText(LoginActivity.this, "Đăng nhập thành công", Toast.LENGTH_LONG).show();
                 Intent Home = new Intent(LoginActivity.this, HomeActivity.class);
-                Home.putExtra("user", t);
+                Home.putExtra("ten", t);
                 startActivity(Home);
             }
             else {
